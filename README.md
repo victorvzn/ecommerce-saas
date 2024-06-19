@@ -44,3 +44,14 @@ shadcn-ui@0.8.0
 ✔ Which color would you like to use as base color? › Slate
 ✔ Would you like to use CSS variables for colors? ›`yes
 ```
+
+* clerk/nextjs
+
+```bash
+npm install @clerk/nextjs
+```
+
+* Add provider
+* Add middleware.ts
+* Add sign-up and sign-in routes
+* Add main layout to (routes)
