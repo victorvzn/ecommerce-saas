@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 **Tools installed:**
 
-* Next.js 14
+* [Next.js 14](https://nextjs.org/)
 
 ```bash
 npx create-next-app@latest ecommerce-saas --typescript --tailwind --eslint
@@ -31,7 +31,7 @@ cd ecommerce-saas
 npm run dev
 ```
 
-* Shadcn/ui
+* [Shadcn/ui](https://ui.shadcn.com/)
 
 ```bash
 npx shadcn-ui@latest init
@@ -45,7 +45,7 @@ shadcn-ui@0.8.0
 ✔ Would you like to use CSS variables for colors? ›`yes
 ```
 
-* clerk/nextjs
+* [clerk/nextjs](https://clerk.com/)
 
 ```bash
 npm install @clerk/nextjs
