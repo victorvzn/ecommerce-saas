@@ -56,4 +56,26 @@ npm install @clerk/nextjs
 * Add sign-up and sign-in routes
 * Add main layout to (routes)
 
-* npm i zustands
+* npm i zustand
+
+
+### Prisma
+
+```
+npm i -D prisma
+npm i -D @prisma/client
+npm install @libsql/client @prisma/adapter-libsql
+
+npx prisma init
+
+turso auth login
+turso db create ecommerce-saas-db-dev
+turso db show ecommerce-saas-db-dev
+turso db tokens create ecommerce-saas-db-dev
+
+npx prisma generate
+npx prisma db push (NO SE USA)
+
+npx prisma migrate dev --name init
+turso db shell ecommerce-saas-db-dev < prisma/migrations/20240623130635_init/migration.sql
+```
