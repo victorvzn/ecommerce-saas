@@ -1,15 +1,28 @@
-import { UserButton } from "@clerk/nextjs";
+'use client'
 
-export default function SetupPage() {
+// import { UserButton } from "@clerk/nextjs";
+// <UserButton afterSignOutUrl="/" />
+ 
+import { useStoreModal } from "@/hooks/use-store-modal";
+import { useEffect } from "react";
+
+const SetupPage = () => {
+  // const onOpen = useStoreModal((state) => state.onOpen)
+  // const isOpen = useStoreModal((state) => state.isOpen)
+
+  const { onOpen, isOpen } = useStoreModal()
+
+  useEffect(() => {
+    if (!isOpen) {
+      onOpen()
+    }
+  }, [isOpen, onOpen])
+
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      <h1>Ecommerce Saas v0.1.0</h1>
-
-      <div className="flex gap-3">
-        This is a protected route!
-
-        <UserButton afterSignOutUrl="/sign-in" />
-      </div>
+    <main className="p-4">
+      Root page
     </main>
   );
 }
+
+export default SetupPage

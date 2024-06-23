@@ -55,3 +55,5 @@ npm install @clerk/nextjs
 * Add middleware.ts
 * Add sign-up and sign-in routes
 * Add main layout to (routes)
+
+* npm i zustands
